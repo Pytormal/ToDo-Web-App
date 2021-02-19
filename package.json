@@ -1,0 +1,23 @@
+{
+  "name": "todo-web-app",
+  "version": "1.0.0",
+  "description": "show for portfolio app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pytormal/ToDo-Web-App.git"
+  },
+  "author": "AlexAndrew Mallory",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pytormal/ToDo-Web-App/issues"
+  },
+  "homepage": "https://github.com/Pytormal/ToDo-Web-App#readme",
+  "dependencies": {
+    "node": "^15.8.0",
+    "react": "^17.0.1"
+  }
+}
