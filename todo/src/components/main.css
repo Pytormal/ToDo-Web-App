@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image:url('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background-size: 220vh auto;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+span {
+  color:white;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+
+.App {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+.h-container{
+  padding-top:2rem;
+  padding-bottom:2rem;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+
+.header {
+  display: flex;
+  font-size:1.6rem;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.nPut{
+  display:flex;
+  flex-direction: column;
+  width:50%;
+}
+ .addButton {
+     font-size:1.5rem;
+   }
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+  padding: 6px 0;
+  font-size: 1.2rem;
+  width: 80%;
+  outline: 5;
+  color: darkviolet;
+  font-weight: bold;
+  border-bottom: 2px dashed lightyellow;
+  margin-right: 8px;
+}
+
+/* Header Media Querie */
+ 
+ @media (max-width:768px){
+   .h-container{
+     flex-direction: column;
+   }
+   .header{
+     justify-content: center;
+   }
+   .nPut {
+    margin-top:2rem;
+    width:100%;
+   }
+ }
+
+ @media (max-width:426px){
+
+    .h-container{
+     justify-content:center;
+     font-size:2rem;
+   }
+   .header{
+     justify-content: center;
+    font-size:2rem;
+   }
+   .nPut{
+    margin-top:2rem;
+    width:100%;
+   }
+   .addButton {
+     font-size:1rem;
+   }
+ }
+
+/* app body */
+.todo-contain{
+  width: 50%; 
+  font-size:1.2rem;
+  display:flex;
+  justify-content: center;
+  margin: auto;
+  margin-right:100px;
+}
+.todo-list {
+  margin: 0 auto;
+ 
+}
+.task {
+  width: 100%;
+  text-align: right;
+  flex-wrap: wrap;
+  margin: 4px 0;
+  padding-top:1.5rem;
+  cursor: pointer;
+}
+
+.task.completed {
+  background-image:url('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  text-decoration: line-through;
+  color:#e64944;
+}
+
+
+/* Media Queries for app body */
+@media (max-width:955px){
+  .todo-contain{
+    font-size:1rem;
+  }
+}
+@media (max-width:846px){
+  .todo-contain{
+    font-size:.8rem;
+  }
+}
+
+@media (max-width:775px){
+  .todo-contain{
+    font-size:.7rem;
+  }
+}
+@media (max-width:680px){
+  .todo-contain{
+    font-size:.6rem;
+  }
+}
+
+/* Clear Button */
+button {
+  background-color: transparent;
+  border: 1px solid #e64944;
+  color: white; 
+}
+
+input::placeholder {
+  color: teal;
+}
+
+.btn{
+display:flex;
+     flex-direction: row;
+padding:4rem;
+}
+.btn-contain2{
+  display:flex;
+  justify-content: space-evenly;
+  margin-top:2rem;
+}
+.clr-btn{
+font-size:1.2rem; 
+width:15rem 
+}
+
+@media (max-width:700px){
+  .btn-contain2{
+    font-size:1rem;
+    display:flex;
+    flex-direction: column;
+  }
+}
+@media (max-width:595){
+ .todo-list{
+   width:100%;
+ }
+}
+
+@media (max-width:500px){
+  .todo-contain{
+     width:50%;
+     display:flex;
+     flex-direction: row;
+  }
+   .todo-list{
+    display:flex;
+   flex-direction: column;
+   justify-content:center;
+   
+  }
+  .task{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+      border-bottom:.1rem solid teal;
+  }
+ 
+  .btn-contain{
+    display:flex;
+    justify-content:space-around;
+  }
+}
+
+.vidContain {
+    width:300px; height:200px;
+    position:relative;
+    display:inline-block;
+    margin:10px;
+}
+  
+.content {
+    position:absolute;
+    top:0; left:0;
+    background: black;
+    color:white;
+}
+
+

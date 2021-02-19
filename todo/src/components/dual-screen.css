@@ -1,0 +1,60 @@
+@media (screen-spanning: single-fold-vertical) {
+  .split{
+    height:100vh;
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.todo-contain,.h-container{
+    flex: 0 0 env(fold-left);
+    margin-inline-start: env(fold-width);
+    overflow-y: scroll;
+}
+.todo-list{width:90%}
+.btn-contain2{
+    flex:1;
+    margin: 0;
+    overflow: hidden;
+}
+.btn-contain2{
+    height:5rem;
+}
+
+}
+
+@media (screen-spanning: single-fold-horizontal) {
+    .split{
+    height:100vw;
+    display:flex;
+    flex-direction: row;
+}
+
+.todo-contain{ 
+    height:350px;
+    font-size:1rem;
+}
+.todo-contain,.h-container{
+    margin-inline-start: env(fold-height);
+    overflow-y: scroll;
+}
+
+.todo-list{
+    width:90%;
+}
+
+.btn-contain2{
+    flex:1;
+    margin-top: 14rem;
+    overflow: hidden;
+    height:2rem;
+}
+.clr-btn{
+    height:4rem;
+}
+}
+
+@media (screen-spanning: single-fold-vertical), (screen-spanning: single-fold-horizontal) {
+   body {
+      background-color: green;
+   }
+}
