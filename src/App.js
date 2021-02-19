@@ -31,8 +31,18 @@ const task = [
 		completed: false,
 	},
 	{
+		name: 'best thing: it supports dual screen phones like the Surface Duo!',
+		id: 3654117562,
+		completed: false,
+	},
+	{
 		name: 'Enjoy the App!',
 		id: 36541231756,
+		completed: false,
+	},
+	{
+		name: 'new features to come',
+		id: 3654117561,
 		completed: false,
 	},
 ];

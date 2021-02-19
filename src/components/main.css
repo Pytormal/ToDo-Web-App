@@ -94,6 +94,7 @@ input {
     margin-top:2rem;
     width:100%;
    }
+  
  }
 
  @media (max-width:426px){
@@ -121,16 +122,19 @@ input {
   display:flex;
   justify-content: flex-end;
 }
-/* .todo-list {
-  
-} */
+
+.split{
+     margin:1vw;
+   }
+
 .task {
   width: 100%;
-  text-align: right;
+  text-align: center;
   flex-wrap: wrap;
   margin: 4px 0;
   padding-top:1.5rem;
   cursor: pointer;
+  
 }
 
 .task.completed {
@@ -207,15 +211,15 @@ width:15rem
 
 @media (max-width:500px){
   .todo-contain{
-     width:50%;
      display:flex;
      flex-direction: row;
+     height:300px;
   }
    .todo-list{
-    display:flex;
-   flex-direction: column;
-   justify-content:center;
-   
+  display:flex;
+  flex-wrap: wrap;
+     overflow: scroll;
+     height:auto;
   }
   .task{
     width:50%;
@@ -223,6 +227,7 @@ width:15rem
     justify-content:center;
     text-align:center;
       border-bottom:.1rem solid teal;
+      
   }
  
   .btn-contain{

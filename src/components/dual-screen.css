@@ -15,7 +15,7 @@
 
 .todo-contain{
     flex: 0 0 env(fold-left);
-    margin-inline-start: env(fold-width);
+    /* margin-inline-start: env(fold-width); */
     justify-content:space-between;
     overflow-y: scroll;
 }
@@ -31,6 +31,9 @@
 }
 .btn-contain2{
     height:5rem;
+}
+.task{
+    text-align: end;
 }
 
 }
