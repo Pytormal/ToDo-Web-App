@@ -5,12 +5,20 @@
     flex-direction: row-reverse;
 }
 
-.todo-contain,.h-container{
+.h-container {
+      margin: 0 5vw 0 5vw;
+}
+.todo-contain{
     flex: 0 0 env(fold-left);
     margin-inline-start: env(fold-width);
+    justify-content:space-between;
     overflow-y: scroll;
+ 
 }
-.todo-list{width:90%}
+
+.todo-list{
+    width:80%;
+}
 .btn-contain2{
     flex:1;
     margin: 0;
@@ -26,7 +34,7 @@
     .split{
     height:100vw;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .todo-contain{ 
@@ -51,6 +59,7 @@
 .clr-btn{
     height:4rem;
 }
+
 }
 
 @media (screen-spanning: single-fold-vertical), (screen-spanning: single-fold-horizontal) {
