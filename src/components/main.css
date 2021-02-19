@@ -119,12 +119,12 @@ input {
   width: 50%; 
   font-size:1.2rem;
   display:flex;
-  justify-content: center;
+  margin:0 auto;
+  justify-content: flex-end;
 }
-.todo-list {
-  margin: 0 auto;
- 
-}
+/* .todo-list {
+  
+} */
 .task {
   width: 100%;
   text-align: right;
